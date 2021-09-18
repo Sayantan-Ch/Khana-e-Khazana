@@ -7,9 +7,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>DD Delivery</title>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <style>
         *{
             margin: 0%;
@@ -52,7 +58,7 @@
         .card-img {
             filter: brightness(100%);
             width: 60%;
-            opacity: 20%;
+            opacity: 30%;
         }
 
         .card {
@@ -76,44 +82,47 @@
         }
     </style>
 </head>
+<header>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning navbar-fixed-top">
+            <a onclick="window.location.href='index.html'" class="navbar-brand " href="#">
+                <img src="Src/Icons.svg" width="50" height="40" class="d-inline-block align-text-middle "
+                    alt=""><span style="font-size:20px; margin-top: 20px;">Khaana-e-Khazana</span>
 
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto color-light">
+                    <li class="nav-item active">
+                        <a  onclick="window.location.href='index.html#Sec_H'"class="nav-link" href="#Sec_H"><span style="font-size:20px;">Home</span>
+                 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a onclick="window.location.href='index.html#Sec_HIW'"class="nav-link" href="#Sec_HIW"><span style="font-size:20px;">How It Works</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a  onclick="window.location.href='index.html#Sec_C'"class="nav-link" href="#Sec_C"><span style="font-size:20px;">Join Us</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a  onclick="window.location.href='index.html#Sec_CU'"class="nav-link" href="#Sec_CU"><span style="font-size:20px;">Contact Us</span></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+
+    </div>
+</header>
 <body>
-    <header>
-        <div>
-            <nav class="navbar navbar-expand-lg navbar-light bg-warning navbar-fixed-top">
-                <a onclick="window.location.href='index.html'" class="navbar-brand " href="#">
-                    <img src="Src/Icons.svg" width="50" height="40" class="d-inline-block align-text-middle "
-                        alt=""><span style="font-size:20px; margin-top: 20px;">Khaana-e-Khazana</span>
-
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto color-light">
-                        <li class="nav-item active">
-                            <a  onclick="window.location.href='index.html#Sec_H'"class="nav-link" href="#Sec_H"><span style="font-size:20px;">Home</span>
-                     </a>
-                        </li>
-                        <li class="nav-item">
-                            <a onclick="window.location.href='index.html#Sec_HIW'"class="nav-link" href="#Sec_HIW"><span style="font-size:20px;">How It Works</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a  onclick="window.location.href='index.html#Sec_C'"class="nav-link" href="#Sec_C"><span style="font-size:20px;">Join Us</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a  onclick="window.location.href='index.html#Sec_CU'"class="nav-link" href="#Sec_CU"><span style="font-size:20px;">Contact Us</span></a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-
-        </div>
-    </header>
+    
     <div class="dd">
+        <br>
+        <br>
         <h1 class="ddhead">Dabba Delivery</h1>
         <div class="ddcontent">
             <img src="Src/ddpic.jpeg" alt="ddpic">
