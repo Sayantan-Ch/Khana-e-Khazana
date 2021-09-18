@@ -35,6 +35,61 @@
         location.href = "dd.html";
     };
 </script>
+<style>
+    html {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    @media (min-width: 768px) {
+        html {
+            font-size: 1.1rem;
+        }
+
+        h1 {
+            font-size: 1.3rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (min-width: 991px) {
+        html {
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        html {
+            font-size: 1.2rem;
+        }
+
+        h1 {
+            font-size: 1.7rem;
+        }
+
+        p {
+            font-size: 1.6rem;
+        }
+    }
+</style>
 
 <body>
 
@@ -48,37 +103,42 @@
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                    aria-label="Toggle navigation bg-transparent">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto color-light">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#Sec_H"><span style="font-size:20px;">Home</span>
-                     </a>
+                            <a onclick="window.location.href='index.html#Sec_H'" class="nav-link" href="#Sec_H"><span
+                                    style="font-size:20px;">Home</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Sec_HIW"><span style="font-size:20px;">How It Works</span></a>
+                            <a onclick="window.location.href='index.html#Sec_HIW'" class="nav-link"
+                                href="#Sec_HIW"><span style="font-size:20px;">How It Works</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Sec_C"><span style="font-size:20px;">Join Us</span></a>
+                            <a onclick="window.location.href='index.html#Sec_C'" class="nav-link" href="#Sec_C"><span
+                                    style="font-size:20px;">Join Us</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#Sec_CU"><span style="font-size:20px;">Contact Us</span></a>
+                            <a onclick="window.location.href='index.html#Sec_CU'" class="nav-link" href="#Sec_CU"><span
+                                    style="font-size:20px;">Contact Us</span></a>
                         </li>
                     </ul>
                 </div>
             </nav>
 
         </div>
-    
+
         <video playsinline autoplay muted loop poster="TheGuide.jpg" id="myVideo">
             <source src="Src/final.mp4" type="video/mp4">
         </video>
     </header>
-    <div class="container">
-        <section class="cards" id="Sec_H">
+    <br><br><br>
+    <div class="container d-flex flex-column">
+        <section class="cards container" id="Sec_H">
             <br><br>
             <div class="card bg-transparent text-white">
 
@@ -91,7 +151,7 @@
                         <h1 class="card-title text-dark "></h1>
                         <br>
                         <br>
-                        
+
                         <h1
                             style="color: black; font-size: 70px; margin-left: 0px; font-family: 'Work Sans', sans-serif;">
                             Khaana-e-
@@ -124,18 +184,26 @@
                 </div>
             </div>
         </section>
-        <section class="cards" id="Sec_HIW">
+        
+
+        
+        <section class="cards container" id="Sec_HIW">
             <br><br><br><br>
             <div class="card bg-transparent text-white">
-
                 <img src="Src/page2.png" class="card-img w-100 bg-warning" alt="...">
-                <div class="card-img-overlay d-flex flex-row">
+
+                <div class="card-img-overlay d-flex flex-row ">
+
+                    <div style="border: 2px solid black ; display: contents;">
+                        <img src="Src/page2mom.svg" ; alt="">
+                    </div>
                     <div>
                         <h1 class="card-title text-dark ">How It Works</h1>
                         <br>
                         <br>
-                        <p class="card-text text-dark"
-                            style="color: black; font-size: 20px;  margin-left: 20px; font-family: 'Ubuntu', sans-serif;">Lazy to cook?
+                        <p class="card-text text-dark col-sm py-2 py-md-3"
+                            style="color: black; font-size: 20px;  margin-left: 14px; font-family: 'Ubuntu', sans-serif;">
+                            Lazy to cook?
                             Bored of eating unhealthy restaurant's food?
                             Tired of paying hefty bills? No worries if there is no one at your house to cook food for
                             you, No worries if you don't want to eat the restaurant food. We have the solution for all
@@ -145,13 +213,12 @@
                             using refined oil which best takes care of your heart because for us your little heart is of
                             utmost importance.</p>
                     </div>
-                    <div style="border: 2px solid black ; display: contents;">
-                        <img src="Src/page2mom.svg" ; alt="">
-                    </div>
+
                 </div>
             </div>
         </section>
-        <section class="cards" id="Sec_C">
+    
+        <section class="cards container" id="Sec_C">
             <br><br><br><br>
             <div class="card bg-transparent text-white">
 
@@ -165,55 +232,63 @@
                         <br>
                         <br>
                         <p class="card-text text-dark"
-
                             style="color: black; font-size: 20px; margin-right: 20px; font-family: 'Ubuntu', sans-serif;">
                             <br>
-                            Can you cook well? Do you want a side income? We are just a click away. We need you as much as you need us. We will connect you to your customers. You just have sit for our interview, follow our health and hygiene protocols and voila! Like that you can earn your pocket money from the comfort of your home. We are like your own food freelancing site. So what are you waiting for? Contact us today!</p>
+                            Can you cook well? Do you want a side income? We are just a click away. We need you as much
+                            as you need us. We will connect you to your customers. You just have sit for our interview,
+                            follow our health and hygiene protocols and voila! Like that you can earn your pocket money
+                            from the comfort of your home. We are like your own food freelancing site. So what are you
+                            waiting for? Contact us today!
+                        </p>
                     </div>
 
                 </div>
             </div>
         </section>
-        <section class="cards" id="Sec_CU">
+        <section class="cards container" id="Sec_CU">
             <br>
             <br>
             <br>
             <div class="card bg-transparent text-white">
 
-                <img src="Src/page2.png" class="card-img w-100 bg-warning font-size: 20px; margin-right: 20px; " alt="...">
+                <img src="Src/page2.png" class="card-img w-100 bg-warning font-size: 20px; margin-right: 20px; "
+                    alt="...">
                 <div class="card-img-overlay d-flex flex-row">
+                    <div style="border: 2px solid black ; display: contents; margin-left:100px;">
+                        <img src="Src/Page3mom.svg" ; width="50%" height="100%" alt="">
+                    </div>
                     <div id="content">
                         <h1 class="card-title text-dark font-size: 20px; margin-left: 20px;">Contact Us</h1>
                         <br>
                         <br>
                         <p class="card-text text-dark"
-                            style="color: black; font-size: 20px; margin-left: 20px; font-family: 'Ubuntu', sans-serif;"><b>MAILING ADDRESS</b>
-                        <br>
-                        
-                        Bisra Rd, National Institute of Technology, Jindal Colony, Udit Nagar, Rourkela, Odisha 769001, India
-                        <br>
-                        <br>
-                        <br>
-                        <b>EMAIL ADDRESS</b>
-                        <br>
-                        
-                        Khaana-e-khazana.org.in
-                        <br>
-                        <br>
-                        
-                        <b>PHONE NUMBER</b>
-                        <br>
-                        
-                        +977-9809139966
-                        <br>
-                        +91-8073914145
-                        
-                        
-                    </p>
+                            style="color: black; font-size: 20px; margin-left: 20px; font-family: 'Ubuntu', sans-serif;">
+                            <b>MAILING ADDRESS</b>
+                            <br>
+
+                            Bisra Rd, National Institute of Technology, Jindal Colony, Udit Nagar, Rourkela, Odisha
+                            769001, India
+                            <br>
+                            <br>
+                            <br>
+                            <b>EMAIL ADDRESS</b>
+                            <br>
+
+                            Khaana-e-khazana.org.in
+                            <br>
+                            <br>
+
+                            <b>PHONE NUMBER</b>
+                            <br>
+
+                            +977-9809139966
+                            <br>
+                            +91-8073914145
+
+
+                        </p>
                     </div>
-                    <div style="border: 2px solid black ; display: contents; margin-left-100px;">
-                        <img src="Src/Page3mom.svg" ; width="50%" height="100%"  alt="">
-                    </div>
+
                 </div>
             </div>
         </section>
